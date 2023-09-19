@@ -91,7 +91,7 @@ describe("Get all todos ", async () => {
     it("Delete data", async () => {
       const res = await req.delete("/todos/1");
       //   console.log(res.body);
-      expect(res.body).jsonSchema(todoSchema);
+      expect(res.body).jsonSchema(todositemschema);
     });
   });
 });
